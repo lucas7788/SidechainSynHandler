@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.github.ontio.dao.SendTxDetailMapper">
+    <resultMap id="BaseResultMap" type="com.github.ontio.model.SendTxDetail">
+        <result column="txhash" jdbcType="VARCHAR" property="txhash" />
+        <result column="blkHeight" jdbcType="INTEGER" property="blkHeight" />
+        <result column="amount" jdbcType="VARCHAR" property="amount" />
+        <result column="chainType" jdbcType="VARCHAR" property="chainType" />
+        <result column="nodeUrl" jdbcType="VARCHAR" property="nodeUrl" />
+        <result column="functionName" jdbcType="VARCHAR" property="functionName" />
+        <result column="sideChainId" jdbcType="VARCHAR" property="sideChainId" />
+        <result column="address" jdbcType="VARCHAR" property="address" />
+    </resultMap>
+    <sql id="Base_Column_List">
+    txhash, blkHeight, amount, chainType, nodeUrl,functionName,sideChainId,address
+  </sql>
+    <insert id="insertSendTxDetail" parameterType="com.github.ontio.model.SendTxDetail" useGeneratedKeys="true" keyProperty="id">
+    insert into tbl_sendtx_detail (txhash, blkHeight, amount, chainType,
+      nodeUrl,functionName,sideChainId,address)
+    values (#{txhash,jdbcType=VARCHAR}, #{blkHeight,jdbcType=INTEGER}, #{amount,jdbcType=VARCHAR}, #{chainType,jdbcType=VARCHAR},
+      #{nodeUrl,jdbcType=VARCHAR},#{functionName,jdbcType=VARCHAR},#{sideChainId,jdbcType=VARCHAR},#{address,jdbcType=VARCHAR})
+  </insert>
+    <select id="selectByTxhash" parameterType="java.lang.String" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List" />
+        from tbl_sendtx_detail
+        where txhash = #{TxHash,jdbcType=VARCHAR}
+    </select>
+    <select id="updateSendTxDetail" parameterType="java.lang.String">
+        update tbl_sendtx_detail
+        set txhash = #{txhash, jdbcType=VARCHAR}
+        where txhash = ""
+    </select>
+
+</mapper>

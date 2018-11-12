@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.github.ontio.dao.NotifyMapper">
+    <resultMap id="BaseResultMap" type="com.github.ontio.model.NotifyInfoDao">
+        <result column="blkHeight" jdbcType="INTEGER" property="blkHeight" />
+        <result column="TxHash" jdbcType="VARCHAR" property="TxHash" />
+        <result column="ContractAddress" jdbcType="VARCHAR" property="ContractAddress" />
+        <result column="funcName" jdbcType="VARCHAR" property="funcName" />
+        <result column="sideChainId" jdbcType="VARCHAR" property="sideChainId" />
+        <result column="address" jdbcType="VARCHAR" property="address" />
+        <result column="amount" jdbcType="VARCHAR" property="amount" />
+    </resultMap>
+    <sql id="Base_Column_List">
+    blkHeight, TxHash, ContractAddress, funcName, sideChainId,address,amount
+    </sql>
+    <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List" />
+        from tbl_mainchain_notify
+        where TxHash = #{TxHash,jdbcType=VARCHAR}
+    </select>
+    <insert id="insertMainNotify" parameterType="com.github.ontio.model.NotifyInfoDao">
+    insert into tbl_mainchain_notify (blkHeight,TxHash, ContractAddress, funcName, sideChainId,address,amount)
+    values (#{blkHeight,jdbcType=INTEGER}, #{TxHash,jdbcType=VARCHAR}, #{ContractAddress,jdbcType=VARCHAR}, #{funcName,jdbcType=VARCHAR},
+    #{sideChainId,jdbcType=VARCHAR}, #{address,jdbcType=VARCHAR},#{amount,jdbcType=VARCHAR})
+  </insert>
+    <insert id="insertSideNotify" parameterType="com.github.ontio.model.NotifyInfoDao">
+    insert into tbl_sidechain_notify (blkHeight,TxHash, ContractAddress, funcName, sideChainId,address,amount)
+    values (#{blkHeight,jdbcType=INTEGER}, #{TxHash,jdbcType=VARCHAR}, #{ContractAddress,jdbcType=VARCHAR}, #{funcName,jdbcType=VARCHAR},
+    #{sideChainId,jdbcType=VARCHAR}, #{address,jdbcType=VARCHAR},#{amount,jdbcType=VARCHAR})
+  </insert>
+</mapper>

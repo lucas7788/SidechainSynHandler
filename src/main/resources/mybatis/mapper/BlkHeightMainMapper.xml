@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.github.ontio.dao.BlkHeightMainMapper">
+    <resultMap id="BaseResultMap" type="java.lang.Integer">
+        <result column="blkHeight" jdbcType="INTEGER" property="blkHeight" />
+    </resultMap>
+    <insert id="insert" parameterType="java.lang.Integer" useGeneratedKeys="true" keyProperty="id">
+    insert into tbl_mainchain_blkheight (blkHeight)
+    values (#{blkHeight})
+  </insert>
+
+    <select id="selectDBHeight" resultType="java.lang.Integer">
+    select blkheight
+    from tbl_mainchain_blkheight
+  </select>
+
+    <update id="update" parameterType="java.lang.Integer">
+    update tbl_mainchain_blkheight
+    set blkHeight = #{blkheight}
+  </update>
+
+</mapper>

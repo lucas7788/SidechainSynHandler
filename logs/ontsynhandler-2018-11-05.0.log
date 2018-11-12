@@ -1,0 +1,1275 @@
+[ INFO ] [2018-11-05 09:14:54] com.github.ontio.OntsynhandlerApplication [50] - Starting OntsynhandlerApplication on sss.local with PID 742 (/Users/sss/dev/localgit/javaProject/ontology-explorer/back-end-projects/OntSynHandler/target/classes started by sss in /Users/sss/dev/localgit/javaProject/ontology-explorer/back-end-projects/OntSynHandler)
+[ INFO ] [2018-11-05 09:14:54] com.github.ontio.OntsynhandlerApplication [663] - The following profiles are active: uat
+[ INFO ] [2018-11-05 09:14:54] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@59fd97a8: startup date [Mon Nov 05 09:14:54 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-05 09:14:56] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$d7c58828] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-11-05 09:14:56] org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping [236] - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[ INFO ] [2018-11-05 09:14:56] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 20001 (http)
+[ INFO ] [2018-11-05 09:14:56] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-20001"]
+[ INFO ] [2018-11-05 09:14:56] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2018-11-05 09:14:56] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+[ INFO ] [2018-11-05 09:14:56] org.apache.catalina.core.AprLifecycleListener [180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/sss/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[ INFO ] [2018-11-05 09:14:56] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2018-11-05 09:14:56] org.springframework.web.context.ContextLoader [285] - Root WebApplicationContext: initialization completed in 1904 ms
+[ INFO ] [2018-11-05 09:14:57] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2018-11-05 09:14:57] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet messageDispatcherServlet mapped to [/services/*]
+[ INFO ] [2018-11-05 09:14:57] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2018-11-05 09:14:57] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2018-11-05 09:14:57] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2018-11-05 09:14:57] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ WARN ] [2018-11-05 09:14:57] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [558] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'taskWare': Invocation of init method failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'MainChainThread': Unsatisfied dependency expressed through field 'msgHandleService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'msgHandleService': Unsatisfied dependency expressed through field 'sendTransactionThread'; nested exception is org.springframework.beans.factory.BeanNotOfRequiredTypeException: Bean named 'SendTransactionThread' is expected to be of type 'com.github.ontio.thread.SendTransactionThread' but was actually of type 'com.sun.proxy.$Proxy70'
+[ INFO ] [2018-11-05 09:14:57] org.apache.catalina.core.StandardService [180] - Stopping service [Tomcat]
+[ INFO ] [2018-11-05 09:14:57] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [101] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ ERROR] [2018-11-05 09:14:57] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [42] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'SendTransactionThread' could not be injected as a 'com.github.ontio.thread.SendTransactionThread' because it is a JDK dynamic proxy that implements:
+
+
+Action:
+
+Consider injecting the bean as one of its interfaces or forcing the use of CGLib-based proxies by setting proxyTargetClass=true on @EnableAsync and/or @EnableCaching.
+
+[ INFO ] [2018-11-05 09:18:50] com.github.ontio.OntsynhandlerApplication [50] - Starting OntsynhandlerApplication on sss.local with PID 749 (/Users/sss/dev/localgit/javaProject/ontology-explorer/back-end-projects/OntSynHandler/target/classes started by sss in /Users/sss/dev/localgit/javaProject/ontology-explorer/back-end-projects/OntSynHandler)
+[ INFO ] [2018-11-05 09:18:50] com.github.ontio.OntsynhandlerApplication [663] - The following profiles are active: uat
+[ INFO ] [2018-11-05 09:18:50] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1d9b7cce: startup date [Mon Nov 05 09:18:50 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-05 09:18:51] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$9adbeb58] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-11-05 09:18:51] org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping [236] - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[ INFO ] [2018-11-05 09:18:51] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 20001 (http)
+[ INFO ] [2018-11-05 09:18:51] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-20001"]
+[ INFO ] [2018-11-05 09:18:51] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2018-11-05 09:18:51] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+[ INFO ] [2018-11-05 09:18:51] org.apache.catalina.core.AprLifecycleListener [180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/sss/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[ INFO ] [2018-11-05 09:18:51] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2018-11-05 09:18:51] org.springframework.web.context.ContextLoader [285] - Root WebApplicationContext: initialization completed in 1424 ms
+[ INFO ] [2018-11-05 09:18:51] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2018-11-05 09:18:51] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet messageDispatcherServlet mapped to [/services/*]
+[ INFO ] [2018-11-05 09:18:51] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2018-11-05 09:18:51] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2018-11-05 09:18:51] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2018-11-05 09:18:51] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ WARN ] [2018-11-05 09:18:52] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [558] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'taskWare': Invocation of init method failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'MainChainThread': Unsatisfied dependency expressed through field 'msgHandleService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'msgHandleService': Unsatisfied dependency expressed through field 'sendTransactionThread'; nested exception is org.springframework.beans.factory.BeanNotOfRequiredTypeException: Bean named 'SendTransactionThread' is expected to be of type 'com.github.ontio.thread.SendTransactionThread' but was actually of type 'com.sun.proxy.$Proxy70'
+[ INFO ] [2018-11-05 09:18:52] org.apache.catalina.core.StandardService [180] - Stopping service [Tomcat]
+[ INFO ] [2018-11-05 09:18:52] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [101] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ ERROR] [2018-11-05 09:18:52] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [42] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'SendTransactionThread' could not be injected as a 'com.github.ontio.thread.SendTransactionThread' because it is a JDK dynamic proxy that implements:
+
+
+Action:
+
+Consider injecting the bean as one of its interfaces or forcing the use of CGLib-based proxies by setting proxyTargetClass=true on @EnableAsync and/or @EnableCaching.
+
+[ INFO ] [2018-11-05 09:21:52] com.github.ontio.OntsynhandlerApplication [50] - Starting OntsynhandlerApplication on sss.local with PID 753 (/Users/sss/dev/localgit/javaProject/ontology-explorer/back-end-projects/OntSynHandler/target/classes started by sss in /Users/sss/dev/localgit/javaProject/ontology-explorer/back-end-projects/OntSynHandler)
+[ INFO ] [2018-11-05 09:21:52] com.github.ontio.OntsynhandlerApplication [663] - The following profiles are active: uat
+[ INFO ] [2018-11-05 09:21:52] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5e0826e7: startup date [Mon Nov 05 09:21:52 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-05 09:21:53] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$45ac3efc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-11-05 09:21:53] org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping [236] - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[ INFO ] [2018-11-05 09:21:53] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 20001 (http)
+[ INFO ] [2018-11-05 09:21:53] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-20001"]
+[ INFO ] [2018-11-05 09:21:53] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2018-11-05 09:21:53] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+[ INFO ] [2018-11-05 09:21:53] org.apache.catalina.core.AprLifecycleListener [180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/sss/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[ INFO ] [2018-11-05 09:21:53] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2018-11-05 09:21:53] org.springframework.web.context.ContextLoader [285] - Root WebApplicationContext: initialization completed in 1467 ms
+[ INFO ] [2018-11-05 09:21:54] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2018-11-05 09:21:54] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet messageDispatcherServlet mapped to [/services/*]
+[ INFO ] [2018-11-05 09:21:54] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2018-11-05 09:21:54] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2018-11-05 09:21:54] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2018-11-05 09:21:54] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ WARN ] [2018-11-05 09:21:54] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [558] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'taskWare': Invocation of init method failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'MainChainThread': Unsatisfied dependency expressed through field 'msgHandleService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'msgHandleService': Unsatisfied dependency expressed through field 'sendTransactionThread'; nested exception is org.springframework.beans.factory.BeanNotOfRequiredTypeException: Bean named 'SendTransactionThread' is expected to be of type 'com.github.ontio.thread.SendTransactionThread' but was actually of type 'com.sun.proxy.$Proxy70'
+[ INFO ] [2018-11-05 09:21:54] org.apache.catalina.core.StandardService [180] - Stopping service [Tomcat]
+[ INFO ] [2018-11-05 09:21:54] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [101] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ ERROR] [2018-11-05 09:21:54] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [42] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'SendTransactionThread' could not be injected as a 'com.github.ontio.thread.SendTransactionThread' because it is a JDK dynamic proxy that implements:
+
+
+Action:
+
+Consider injecting the bean as one of its interfaces or forcing the use of CGLib-based proxies by setting proxyTargetClass=true on @EnableAsync and/or @EnableCaching.
+
+[ INFO ] [2018-11-05 09:22:20] com.github.ontio.OntsynhandlerApplication [50] - Starting OntsynhandlerApplication on sss.local with PID 757 (/Users/sss/dev/localgit/javaProject/ontology-explorer/back-end-projects/OntSynHandler/target/classes started by sss in /Users/sss/dev/localgit/javaProject/ontology-explorer/back-end-projects/OntSynHandler)
+[ INFO ] [2018-11-05 09:22:20] com.github.ontio.OntsynhandlerApplication [663] - The following profiles are active: uat
+[ INFO ] [2018-11-05 09:22:20] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@441772e: startup date [Mon Nov 05 09:22:20 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-05 09:22:21] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$e90a5167] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-11-05 09:22:21] org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping [236] - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[ INFO ] [2018-11-05 09:22:21] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 20001 (http)
+[ INFO ] [2018-11-05 09:22:22] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-20001"]
+[ INFO ] [2018-11-05 09:22:22] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2018-11-05 09:22:22] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+[ INFO ] [2018-11-05 09:22:22] org.apache.catalina.core.AprLifecycleListener [180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/sss/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[ INFO ] [2018-11-05 09:22:22] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2018-11-05 09:22:22] org.springframework.web.context.ContextLoader [285] - Root WebApplicationContext: initialization completed in 1647 ms
+[ INFO ] [2018-11-05 09:22:22] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2018-11-05 09:22:22] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet messageDispatcherServlet mapped to [/services/*]
+[ INFO ] [2018-11-05 09:22:22] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2018-11-05 09:22:22] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2018-11-05 09:22:22] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2018-11-05 09:22:22] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ WARN ] [2018-11-05 09:22:22] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [558] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'taskWare': Invocation of init method failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'MainChainThread': Unsatisfied dependency expressed through field 'msgHandleService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'msgHandleService': Unsatisfied dependency expressed through field 'sendTransactionThread'; nested exception is org.springframework.beans.factory.BeanNotOfRequiredTypeException: Bean named 'SendTransactionThread' is expected to be of type 'com.github.ontio.thread.SendTransactionThread' but was actually of type 'com.sun.proxy.$Proxy70'
+[ INFO ] [2018-11-05 09:22:22] org.apache.catalina.core.StandardService [180] - Stopping service [Tomcat]
+[ INFO ] [2018-11-05 09:22:22] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [101] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ ERROR] [2018-11-05 09:22:22] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [42] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'SendTransactionThread' could not be injected as a 'com.github.ontio.thread.SendTransactionThread' because it is a JDK dynamic proxy that implements:
+
+
+Action:
+
+Consider injecting the bean as one of its interfaces or forcing the use of CGLib-based proxies by setting proxyTargetClass=true on @EnableAsync and/or @EnableCaching.
+
+[ INFO ] [2018-11-05 09:30:55] com.github.ontio.OntsynhandlerApplication [50] - Starting OntsynhandlerApplication on sss with PID 809 (/Users/sss/dev/localgit/javaProject/ontology-explorer/back-end-projects/OntSynHandler/target/classes started by sss in /Users/sss/dev/localgit/javaProject/ontology-explorer/back-end-projects/OntSynHandler)
+[ INFO ] [2018-11-05 09:30:55] com.github.ontio.OntsynhandlerApplication [663] - The following profiles are active: uat
+[ INFO ] [2018-11-05 09:30:55] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1ab3a8c8: startup date [Mon Nov 05 09:30:55 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-05 09:30:56] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$a59a26cc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-11-05 09:30:56] org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping [236] - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[ INFO ] [2018-11-05 09:30:56] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 20001 (http)
+[ INFO ] [2018-11-05 09:30:56] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-20001"]
+[ INFO ] [2018-11-05 09:30:56] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2018-11-05 09:30:56] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+[ INFO ] [2018-11-05 09:30:56] org.apache.catalina.core.AprLifecycleListener [180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/sss/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[ INFO ] [2018-11-05 09:30:56] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2018-11-05 09:30:56] org.springframework.web.context.ContextLoader [285] - Root WebApplicationContext: initialization completed in 1508 ms
+[ INFO ] [2018-11-05 09:30:56] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2018-11-05 09:30:56] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet messageDispatcherServlet mapped to [/services/*]
+[ INFO ] [2018-11-05 09:30:56] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2018-11-05 09:30:56] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2018-11-05 09:30:56] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2018-11-05 09:30:56] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ WARN ] [2018-11-05 09:30:57] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [558] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'taskWare': Invocation of init method failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'MainChainThread': Unsatisfied dependency expressed through field 'msgHandleService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'msgHandleService': Unsatisfied dependency expressed through field 'sendTransactionThread'; nested exception is org.springframework.beans.factory.BeanNotOfRequiredTypeException: Bean named 'SendTransactionThread' is expected to be of type 'com.github.ontio.thread.SendTransactionThread' but was actually of type 'com.sun.proxy.$Proxy70'
+[ INFO ] [2018-11-05 09:30:57] org.apache.catalina.core.StandardService [180] - Stopping service [Tomcat]
+[ INFO ] [2018-11-05 09:30:57] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [101] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ ERROR] [2018-11-05 09:30:57] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [42] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'SendTransactionThread' could not be injected as a 'com.github.ontio.thread.SendTransactionThread' because it is a JDK dynamic proxy that implements:
+
+
+Action:
+
+Consider injecting the bean as one of its interfaces or forcing the use of CGLib-based proxies by setting proxyTargetClass=true on @EnableAsync and/or @EnableCaching.
+
+[ INFO ] [2018-11-05 09:31:53] com.github.ontio.OntsynhandlerApplication [50] - Starting OntsynhandlerApplication on sss with PID 813 (/Users/sss/dev/localgit/javaProject/ontology-explorer/back-end-projects/OntSynHandler/target/classes started by sss in /Users/sss/dev/localgit/javaProject/ontology-explorer/back-end-projects/OntSynHandler)
+[ INFO ] [2018-11-05 09:31:53] com.github.ontio.OntsynhandlerApplication [663] - The following profiles are active: uat
+[ INFO ] [2018-11-05 09:31:53] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1ab3a8c8: startup date [Mon Nov 05 09:31:53 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-05 09:31:54] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$f7b7ea99] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-11-05 09:31:54] org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping [236] - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[ INFO ] [2018-11-05 09:31:54] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 20001 (http)
+[ INFO ] [2018-11-05 09:31:54] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-20001"]
+[ INFO ] [2018-11-05 09:31:54] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2018-11-05 09:31:54] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+[ INFO ] [2018-11-05 09:31:54] org.apache.catalina.core.AprLifecycleListener [180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/sss/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[ INFO ] [2018-11-05 09:31:54] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2018-11-05 09:31:54] org.springframework.web.context.ContextLoader [285] - Root WebApplicationContext: initialization completed in 1680 ms
+[ INFO ] [2018-11-05 09:31:55] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2018-11-05 09:31:55] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet messageDispatcherServlet mapped to [/services/*]
+[ INFO ] [2018-11-05 09:31:55] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2018-11-05 09:31:55] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2018-11-05 09:31:55] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2018-11-05 09:31:55] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ WARN ] [2018-11-05 09:31:55] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [558] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'taskWare': Invocation of init method failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'MainChainThread': Unsatisfied dependency expressed through field 'msgHandleService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'msgHandleService': Unsatisfied dependency expressed through field 'sendTransactionThread'; nested exception is org.springframework.beans.factory.BeanNotOfRequiredTypeException: Bean named 'SendTransactionThread' is expected to be of type 'com.github.ontio.thread.SendTransactionThread' but was actually of type 'com.sun.proxy.$Proxy70'
+[ INFO ] [2018-11-05 09:31:55] org.apache.catalina.core.StandardService [180] - Stopping service [Tomcat]
+[ INFO ] [2018-11-05 09:31:55] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [101] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ ERROR] [2018-11-05 09:31:55] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [42] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'SendTransactionThread' could not be injected as a 'com.github.ontio.thread.SendTransactionThread' because it is a JDK dynamic proxy that implements:
+
+
+Action:
+
+Consider injecting the bean as one of its interfaces or forcing the use of CGLib-based proxies by setting proxyTargetClass=true on @EnableAsync and/or @EnableCaching.
+
+[ INFO ] [2018-11-05 09:32:36] com.github.ontio.OntsynhandlerApplication [50] - Starting OntsynhandlerApplication on sss with PID 816 (/Users/sss/dev/localgit/javaProject/ontology-explorer/back-end-projects/OntSynHandler/target/classes started by sss in /Users/sss/dev/localgit/javaProject/ontology-explorer/back-end-projects/OntSynHandler)
+[ INFO ] [2018-11-05 09:32:36] com.github.ontio.OntsynhandlerApplication [663] - The following profiles are active: uat
+[ INFO ] [2018-11-05 09:32:36] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@43195e57: startup date [Mon Nov 05 09:32:36 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-05 09:32:37] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$f7b7ea99] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-11-05 09:32:37] org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping [236] - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[ INFO ] [2018-11-05 09:32:38] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 20001 (http)
+[ INFO ] [2018-11-05 09:32:38] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-20001"]
+[ INFO ] [2018-11-05 09:32:38] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2018-11-05 09:32:38] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+[ INFO ] [2018-11-05 09:32:38] org.apache.catalina.core.AprLifecycleListener [180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/sss/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[ INFO ] [2018-11-05 09:32:38] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2018-11-05 09:32:38] org.springframework.web.context.ContextLoader [285] - Root WebApplicationContext: initialization completed in 1451 ms
+[ INFO ] [2018-11-05 09:32:38] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2018-11-05 09:32:38] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet messageDispatcherServlet mapped to [/services/*]
+[ INFO ] [2018-11-05 09:32:38] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2018-11-05 09:32:38] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2018-11-05 09:32:38] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2018-11-05 09:32:38] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ WARN ] [2018-11-05 09:32:38] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [558] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'taskWare': Invocation of init method failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'MainChainThread': Unsatisfied dependency expressed through field 'msgHandleService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'msgHandleService': Unsatisfied dependency expressed through field 'sendTransactionThread'; nested exception is org.springframework.beans.factory.BeanNotOfRequiredTypeException: Bean named 'SendTransactionThread' is expected to be of type 'com.github.ontio.thread.SendTransactionThread' but was actually of type 'com.sun.proxy.$Proxy70'
+[ INFO ] [2018-11-05 09:32:38] org.apache.catalina.core.StandardService [180] - Stopping service [Tomcat]
+[ INFO ] [2018-11-05 09:32:38] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [101] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ ERROR] [2018-11-05 09:32:38] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [42] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'SendTransactionThread' could not be injected as a 'com.github.ontio.thread.SendTransactionThread' because it is a JDK dynamic proxy that implements:
+
+
+Action:
+
+Consider injecting the bean as one of its interfaces or forcing the use of CGLib-based proxies by setting proxyTargetClass=true on @EnableAsync and/or @EnableCaching.
+
+[ INFO ] [2018-11-05 15:53:41] com.github.ontio.OntsynhandlerApplication [50] - Starting OntsynhandlerApplication on sss.local with PID 8698 (/Users/sss/dev/localgit/javaProject/ontology-explorer/back-end-projects/OntSynHandler/target/classes started by sss in /Users/sss/dev/localgit/javaProject/ontology-explorer/back-end-projects/OntSynHandler)
+[ INFO ] [2018-11-05 15:53:41] com.github.ontio.OntsynhandlerApplication [663] - The following profiles are active: uat
+[ INFO ] [2018-11-05 15:53:41] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@61862a7f: startup date [Mon Nov 05 15:53:41 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-05 15:53:43] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$b3dc47bd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-11-05 15:53:43] org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping [236] - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[ INFO ] [2018-11-05 15:53:43] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 20001 (http)
+[ INFO ] [2018-11-05 15:53:43] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-20001"]
+[ INFO ] [2018-11-05 15:53:43] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2018-11-05 15:53:43] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+[ INFO ] [2018-11-05 15:53:43] org.apache.catalina.core.AprLifecycleListener [180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/sss/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[ INFO ] [2018-11-05 15:53:43] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2018-11-05 15:53:43] org.springframework.web.context.ContextLoader [285] - Root WebApplicationContext: initialization completed in 1883 ms
+[ INFO ] [2018-11-05 15:53:43] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2018-11-05 15:53:43] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet messageDispatcherServlet mapped to [/services/*]
+[ INFO ] [2018-11-05 15:53:43] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2018-11-05 15:53:43] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2018-11-05 15:53:43] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2018-11-05 15:53:43] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ INFO ] [2018-11-05 15:53:44] com.github.ontio.thread.MainChainThread [52] - ========MainChainThread.run=======
+[ INFO ] [2018-11-05 15:53:44] com.github.ontio.OntsynhandlerApplication [30] - ########taskExecutor#########
+[ INFO ] [2018-11-05 15:53:44] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [171] - Initializing ExecutorService 
+[ INFO ] [2018-11-05 15:53:44] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [171] - Initializing ExecutorService  'taskExecutor'
+[ ERROR] [2018-11-05 15:53:44] com.github.ontio.thread.MainChainThread [119] - getBlockHeight error, try again...restful:http://127.0.0.1:20334,error:
+com.github.ontio.network.exception.RestfulException: {"Desc":"Interfaces Error,connect error:","Error":58402}http://127.0.0.1:20334
+	at com.github.ontio.network.rest.Interfaces.getBlockHeight(Interfaces.java:89)
+	at com.github.ontio.network.rest.RestClient.getBlockHeight(RestClient.java:95)
+	at com.github.ontio.sdk.manager.ConnectMgr.getBlockHeight(ConnectMgr.java:201)
+	at com.github.ontio.thread.MainChainThread.getRemoteBlockHeight(MainChainThread.java:116)
+	at com.github.ontio.thread.MainChainThread.run(MainChainThread.java:64)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1202)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1138)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1032)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:966)
+	at com.github.ontio.network.rest.http.get(http.java:161)
+	at com.github.ontio.network.rest.http.get(http.java:190)
+	at com.github.ontio.network.rest.Interfaces.getBlockHeight(Interfaces.java:87)
+	... 4 common frames omitted
+[ INFO ] [2018-11-05 15:53:44] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-05 15:53:44] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [574] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@61862a7f: startup date [Mon Nov 05 15:53:41 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-05 15:53:44] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[ INFO ] [2018-11-05 15:53:44] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[ INFO ] [2018-11-05 15:53:44] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-05 15:53:44] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-05 15:53:44] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [433] - Registering beans for JMX exposure on startup
+[ INFO ] [2018-11-05 15:53:44] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+[ INFO ] [2018-11-05 15:53:45] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [668] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[ INFO ] [2018-11-05 15:53:45] org.apache.coyote.http11.Http11NioProtocol [180] - Starting ProtocolHandler ["http-nio-20001"]
+[ INFO ] [2018-11-05 15:53:45] org.apache.tomcat.util.net.NioSelectorPool [180] - Using a shared selector for servlet write/read
+[ INFO ] [2018-11-05 15:53:45] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [206] - Tomcat started on port(s): 20001 (http) with context path ''
+[ INFO ] [2018-11-05 15:53:45] com.github.ontio.OntsynhandlerApplication [59] - Started OntsynhandlerApplication in 3.817 seconds (JVM running for 4.25)
+[ ERROR] [2018-11-05 15:53:45] com.github.ontio.thread.MainChainThread [119] - getBlockHeight error, try again...restful:http://127.0.0.1:20334,error:
+com.github.ontio.network.exception.RestfulException: {"Desc":"Interfaces Error,connect error:","Error":58402}http://127.0.0.1:20334
+	at com.github.ontio.network.rest.Interfaces.getBlockHeight(Interfaces.java:89)
+	at com.github.ontio.network.rest.RestClient.getBlockHeight(RestClient.java:95)
+	at com.github.ontio.sdk.manager.ConnectMgr.getBlockHeight(ConnectMgr.java:201)
+	at com.github.ontio.thread.MainChainThread.getRemoteBlockHeight(MainChainThread.java:116)
+	at com.github.ontio.thread.MainChainThread.run(MainChainThread.java:64)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1202)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1138)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1032)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:966)
+	at com.github.ontio.network.rest.http.get(http.java:161)
+	at com.github.ontio.network.rest.http.get(http.java:190)
+	at com.github.ontio.network.rest.Interfaces.getBlockHeight(Interfaces.java:87)
+	... 4 common frames omitted
+[ ERROR] [2018-11-05 15:53:46] com.github.ontio.thread.MainChainThread [119] - getBlockHeight error, try again...restful:http://127.0.0.1:20334,error:
+com.github.ontio.network.exception.RestfulException: {"Desc":"Interfaces Error,connect error:","Error":58402}http://127.0.0.1:20334
+	at com.github.ontio.network.rest.Interfaces.getBlockHeight(Interfaces.java:89)
+	at com.github.ontio.network.rest.RestClient.getBlockHeight(RestClient.java:95)
+	at com.github.ontio.sdk.manager.ConnectMgr.getBlockHeight(ConnectMgr.java:201)
+	at com.github.ontio.thread.MainChainThread.getRemoteBlockHeight(MainChainThread.java:116)
+	at com.github.ontio.thread.MainChainThread.run(MainChainThread.java:64)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1202)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1138)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1032)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:966)
+	at com.github.ontio.network.rest.http.get(http.java:161)
+	at com.github.ontio.network.rest.http.get(http.java:190)
+	at com.github.ontio.network.rest.Interfaces.getBlockHeight(Interfaces.java:87)
+	... 4 common frames omitted
+[ INFO ] [2018-11-05 15:53:47] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [993] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@61862a7f: startup date [Mon Nov 05 15:53:41 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-05 15:53:47] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [451] - Unregistering JMX-exposed beans on shutdown
+[ INFO ] [2018-11-05 15:53:47] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [183] - Unregistering JMX-exposed beans
+[ INFO ] [2018-11-05 15:53:47] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [208] - Shutting down ExecutorService 'taskExecutor'
+[ INFO ] [2018-11-05 18:50:47] com.github.ontio.OntsynhandlerApplication [50] - Starting OntsynhandlerApplication on sss.local with PID 12272 (/Users/sss/dev/localgit/javaProject/ontology-explorer/back-end-projects/SidechainSynHandler/target/classes started by sss in /Users/sss/dev/localgit/javaProject/ontology-explorer/back-end-projects/SidechainSynHandler)
+[ INFO ] [2018-11-05 18:50:47] com.github.ontio.OntsynhandlerApplication [663] - The following profiles are active: uat
+[ INFO ] [2018-11-05 18:50:47] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3ce1e309: startup date [Mon Nov 05 18:50:47 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-05 18:50:48] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$9de6b635] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-11-05 18:50:48] org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping [236] - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[ INFO ] [2018-11-05 18:50:48] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 20001 (http)
+[ INFO ] [2018-11-05 18:50:48] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-20001"]
+[ INFO ] [2018-11-05 18:50:48] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2018-11-05 18:50:48] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+[ INFO ] [2018-11-05 18:50:48] org.apache.catalina.core.AprLifecycleListener [180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/sss/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[ INFO ] [2018-11-05 18:50:49] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2018-11-05 18:50:49] org.springframework.web.context.ContextLoader [285] - Root WebApplicationContext: initialization completed in 1755 ms
+[ INFO ] [2018-11-05 18:50:49] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2018-11-05 18:50:49] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet messageDispatcherServlet mapped to [/services/*]
+[ INFO ] [2018-11-05 18:50:49] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2018-11-05 18:50:49] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2018-11-05 18:50:49] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2018-11-05 18:50:49] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ INFO ] [2018-11-05 18:50:49] com.github.ontio.thread.MainChainThread [51] - ========MainChainThread.run=======
+[ INFO ] [2018-11-05 18:50:49] com.github.ontio.OntsynhandlerApplication [29] - ########taskExecutor#########
+[ INFO ] [2018-11-05 18:50:49] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [171] - Initializing ExecutorService 
+[ INFO ] [2018-11-05 18:50:49] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [171] - Initializing ExecutorService  'taskExecutor'
+[ INFO ] [2018-11-05 18:50:49] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ ERROR] [2018-11-05 18:50:49] com.github.ontio.thread.MainChainThread [105] - Exception occured，Synchronization thread can't work,error ...
+java.lang.NullPointerException: null
+	at com.github.ontio.network.rest.RestClient.getBlockHeight(RestClient.java:97)
+	at com.github.ontio.sdk.manager.ConnectMgr.getBlockHeight(ConnectMgr.java:201)
+	at com.github.ontio.thread.MainChainThread.getRemoteBlockHeight(MainChainThread.java:115)
+	at com.github.ontio.thread.MainChainThread.run(MainChainThread.java:63)
+[ INFO ] [2018-11-05 18:50:50] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [574] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3ce1e309: startup date [Mon Nov 05 18:50:47 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-05 18:50:50] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[ INFO ] [2018-11-05 18:50:50] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[ INFO ] [2018-11-05 18:50:50] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-05 18:50:50] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-05 18:50:50] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [433] - Registering beans for JMX exposure on startup
+[ INFO ] [2018-11-05 18:50:50] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+[ INFO ] [2018-11-05 18:50:50] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [668] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[ INFO ] [2018-11-05 18:50:50] org.apache.coyote.http11.Http11NioProtocol [180] - Starting ProtocolHandler ["http-nio-20001"]
+[ INFO ] [2018-11-05 18:50:50] org.apache.tomcat.util.net.NioSelectorPool [180] - Using a shared selector for servlet write/read
+[ INFO ] [2018-11-05 18:50:50] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [206] - Tomcat started on port(s): 20001 (http) with context path ''
+[ INFO ] [2018-11-05 18:50:50] com.github.ontio.OntsynhandlerApplication [59] - Started OntsynhandlerApplication in 3.637 seconds (JVM running for 4.066)
+[ INFO ] [2018-11-05 18:50:53] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [993] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3ce1e309: startup date [Mon Nov 05 18:50:47 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-05 18:50:53] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [451] - Unregistering JMX-exposed beans on shutdown
+[ INFO ] [2018-11-05 18:50:53] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [183] - Unregistering JMX-exposed beans
+[ INFO ] [2018-11-05 18:50:53] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [208] - Shutting down ExecutorService 'taskExecutor'
+[ INFO ] [2018-11-05 18:52:05] com.github.ontio.OntsynhandlerApplication [50] - Starting OntsynhandlerApplication on sss.local with PID 12280 (/Users/sss/dev/localgit/javaProject/ontology-explorer/back-end-projects/SidechainSynHandler/target/classes started by sss in /Users/sss/dev/localgit/javaProject/ontology-explorer/back-end-projects/SidechainSynHandler)
+[ INFO ] [2018-11-05 18:52:05] com.github.ontio.OntsynhandlerApplication [663] - The following profiles are active: uat
+[ INFO ] [2018-11-05 18:52:05] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1d9b7cce: startup date [Mon Nov 05 18:52:05 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-05 18:52:07] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$a1895bbb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-11-05 18:52:07] org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping [236] - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[ INFO ] [2018-11-05 18:52:07] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 20001 (http)
+[ INFO ] [2018-11-05 18:52:07] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-20001"]
+[ INFO ] [2018-11-05 18:52:07] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2018-11-05 18:52:07] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+[ INFO ] [2018-11-05 18:52:07] org.apache.catalina.core.AprLifecycleListener [180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/sss/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[ INFO ] [2018-11-05 18:52:07] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2018-11-05 18:52:07] org.springframework.web.context.ContextLoader [285] - Root WebApplicationContext: initialization completed in 1764 ms
+[ INFO ] [2018-11-05 18:52:07] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2018-11-05 18:52:07] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet messageDispatcherServlet mapped to [/services/*]
+[ INFO ] [2018-11-05 18:52:07] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2018-11-05 18:52:07] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2018-11-05 18:52:07] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2018-11-05 18:52:07] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ INFO ] [2018-11-05 18:52:08] com.github.ontio.thread.MainChainThread [51] - ========MainChainThread.run=======
+[ INFO ] [2018-11-05 18:52:08] com.github.ontio.OntsynhandlerApplication [29] - ########taskExecutor#########
+[ INFO ] [2018-11-05 18:52:08] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [171] - Initializing ExecutorService 
+[ INFO ] [2018-11-05 18:52:08] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [171] - Initializing ExecutorService  'taskExecutor'
+[ ERROR] [2018-11-05 18:52:08] com.github.ontio.thread.MainChainThread [105] - Exception occured，Synchronization thread can't work,error ...
+java.lang.NullPointerException: null
+	at com.github.ontio.network.rest.RestClient.getBlockHeight(RestClient.java:97)
+	at com.github.ontio.sdk.manager.ConnectMgr.getBlockHeight(ConnectMgr.java:201)
+	at com.github.ontio.thread.MainChainThread.getRemoteBlockHeight(MainChainThread.java:115)
+	at com.github.ontio.thread.MainChainThread.run(MainChainThread.java:63)
+[ INFO ] [2018-11-05 18:52:08] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-05 18:52:08] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [574] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1d9b7cce: startup date [Mon Nov 05 18:52:05 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-05 18:52:08] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[ INFO ] [2018-11-05 18:52:08] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[ INFO ] [2018-11-05 18:52:08] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-05 18:52:08] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-05 18:52:08] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [433] - Registering beans for JMX exposure on startup
+[ INFO ] [2018-11-05 18:52:08] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+[ INFO ] [2018-11-05 18:52:08] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [668] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[ INFO ] [2018-11-05 18:52:08] org.apache.coyote.http11.Http11NioProtocol [180] - Starting ProtocolHandler ["http-nio-20001"]
+[ INFO ] [2018-11-05 18:52:08] org.apache.tomcat.util.net.NioSelectorPool [180] - Using a shared selector for servlet write/read
+[ INFO ] [2018-11-05 18:52:08] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [206] - Tomcat started on port(s): 20001 (http) with context path ''
+[ INFO ] [2018-11-05 18:52:08] com.github.ontio.OntsynhandlerApplication [59] - Started OntsynhandlerApplication in 3.725 seconds (JVM running for 4.259)
+[ INFO ] [2018-11-05 18:52:12] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [993] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1d9b7cce: startup date [Mon Nov 05 18:52:05 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-05 18:52:12] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [451] - Unregistering JMX-exposed beans on shutdown
+[ INFO ] [2018-11-05 18:52:12] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [183] - Unregistering JMX-exposed beans
+[ INFO ] [2018-11-05 18:52:12] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [208] - Shutting down ExecutorService 'taskExecutor'
+[ INFO ] [2018-11-05 18:54:36] com.github.ontio.OntsynhandlerApplication [50] - Starting OntsynhandlerApplication on sss.local with PID 12284 (/Users/sss/dev/localgit/javaProject/ontology-explorer/back-end-projects/SidechainSynHandler/target/classes started by sss in /Users/sss/dev/localgit/javaProject/ontology-explorer/back-end-projects/SidechainSynHandler)
+[ INFO ] [2018-11-05 18:54:36] com.github.ontio.OntsynhandlerApplication [663] - The following profiles are active: uat
+[ INFO ] [2018-11-05 18:54:37] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@172b013: startup date [Mon Nov 05 18:54:37 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-05 18:54:38] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$d8f08bf1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-11-05 18:54:38] org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping [236] - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[ INFO ] [2018-11-05 18:54:38] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 20001 (http)
+[ INFO ] [2018-11-05 18:54:38] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-20001"]
+[ INFO ] [2018-11-05 18:54:38] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2018-11-05 18:54:38] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+[ INFO ] [2018-11-05 18:54:38] org.apache.catalina.core.AprLifecycleListener [180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/sss/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[ INFO ] [2018-11-05 18:54:38] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2018-11-05 18:54:38] org.springframework.web.context.ContextLoader [285] - Root WebApplicationContext: initialization completed in 1837 ms
+[ INFO ] [2018-11-05 18:54:39] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2018-11-05 18:54:39] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet messageDispatcherServlet mapped to [/services/*]
+[ INFO ] [2018-11-05 18:54:39] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2018-11-05 18:54:39] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2018-11-05 18:54:39] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2018-11-05 18:54:39] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ INFO ] [2018-11-05 18:54:39] com.github.ontio.thread.MainChainThread [51] - ========MainChainThread.run=======
+[ INFO ] [2018-11-05 18:54:39] com.github.ontio.OntsynhandlerApplication [29] - ########taskExecutor#########
+[ INFO ] [2018-11-05 18:54:52] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [171] - Initializing ExecutorService 
+[ INFO ] [2018-11-05 18:55:38] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [171] - Initializing ExecutorService  'taskExecutor'
+[ INFO ] [2018-11-05 18:55:53] com.github.ontio.OntsynhandlerApplication [50] - Starting OntsynhandlerApplication on sss.local with PID 12289 (/Users/sss/dev/localgit/javaProject/ontology-explorer/back-end-projects/SidechainSynHandler/target/classes started by sss in /Users/sss/dev/localgit/javaProject/ontology-explorer/back-end-projects/SidechainSynHandler)
+[ INFO ] [2018-11-05 18:55:53] com.github.ontio.OntsynhandlerApplication [663] - The following profiles are active: uat
+[ INFO ] [2018-11-05 18:55:53] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@52e6fdee: startup date [Mon Nov 05 18:55:53 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-05 18:55:54] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$e93da770] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-11-05 18:55:54] org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping [236] - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[ INFO ] [2018-11-05 18:55:54] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 20001 (http)
+[ INFO ] [2018-11-05 18:55:54] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-20001"]
+[ INFO ] [2018-11-05 18:55:54] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2018-11-05 18:55:54] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+[ INFO ] [2018-11-05 18:55:54] org.apache.catalina.core.AprLifecycleListener [180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/sss/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[ INFO ] [2018-11-05 18:55:55] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2018-11-05 18:55:55] org.springframework.web.context.ContextLoader [285] - Root WebApplicationContext: initialization completed in 1890 ms
+[ INFO ] [2018-11-05 18:55:55] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2018-11-05 18:55:55] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet messageDispatcherServlet mapped to [/services/*]
+[ INFO ] [2018-11-05 18:55:55] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2018-11-05 18:55:55] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2018-11-05 18:55:55] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2018-11-05 18:55:55] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ INFO ] [2018-11-05 18:55:55] com.github.ontio.thread.MainChainThread [51] - ========MainChainThread.run=======
+[ INFO ] [2018-11-05 18:55:55] com.github.ontio.OntsynhandlerApplication [29] - ########taskExecutor#########
+[ INFO ] [2018-11-05 18:55:55] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [171] - Initializing ExecutorService 
+[ INFO ] [2018-11-05 18:55:55] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [171] - Initializing ExecutorService  'taskExecutor'
+[ INFO ] [2018-11-05 18:55:55] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3565
+[ INFO ] [2018-11-05 18:55:55] com.zaxxer.hikari.HikariDataSource [110] - HikariPool-1 - Starting...
+[ INFO ] [2018-11-05 18:55:55] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-05 18:55:55] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [574] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@52e6fdee: startup date [Mon Nov 05 18:55:53 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-05 18:55:56] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[ INFO ] [2018-11-05 18:55:56] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[ INFO ] [2018-11-05 18:55:56] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-05 18:55:56] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-05 18:55:56] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [433] - Registering beans for JMX exposure on startup
+[ INFO ] [2018-11-05 18:55:56] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+[ INFO ] [2018-11-05 18:55:56] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [668] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[ INFO ] [2018-11-05 18:55:56] org.apache.coyote.http11.Http11NioProtocol [180] - Starting ProtocolHandler ["http-nio-20001"]
+[ INFO ] [2018-11-05 18:55:56] org.apache.tomcat.util.net.NioSelectorPool [180] - Using a shared selector for servlet write/read
+[ INFO ] [2018-11-05 18:55:56] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [206] - Tomcat started on port(s): 20001 (http) with context path ''
+[ INFO ] [2018-11-05 18:55:56] com.github.ontio.OntsynhandlerApplication [59] - Started OntsynhandlerApplication in 3.778 seconds (JVM running for 4.227)
+[ ERROR] [2018-11-05 18:55:56] com.zaxxer.hikari.pool.HikariPool [567] - HikariPool-1 - Exception during pool initialization.
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:151)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:82)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:68)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:338)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:84)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:326)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy64.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:166)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:83)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy66.selectDBHeight(Unknown Source)
+	at com.github.ontio.thread.MainChainThread.run(MainChainThread.java:66)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301)
+	... 46 common frames omitted
+[ ERROR] [2018-11-05 18:55:56] com.github.ontio.thread.MainChainThread [105] - Exception occured，Synchronization thread can't work,error ...
+org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+### The error may exist in file [/Users/sss/dev/localgit/javaProject/ontology-explorer/back-end-projects/SidechainSynHandler/target/classes/mybatis/mapper/CurrentMapper.xml]
+### The error may involve com.github.ontio.dao.CurrentMapper.selectDBHeight
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:77)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:446)
+	at com.sun.proxy.$Proxy64.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:166)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:83)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy66.selectDBHeight(Unknown Source)
+	at com.github.ontio.thread.MainChainThread.run(MainChainThread.java:66)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+### The error may exist in file [/Users/sss/dev/localgit/javaProject/ontology-explorer/back-end-projects/SidechainSynHandler/target/classes/mybatis/mapper/CurrentMapper.xml]
+### The error may involve com.github.ontio.dao.CurrentMapper.selectDBHeight
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:150)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	... 6 common frames omitted
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:82)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:68)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:338)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:84)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:326)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	... 13 common frames omitted
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:151)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78)
+	... 23 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301)
+	... 46 common frames omitted
+[ INFO ] [2018-11-05 18:56:01] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [993] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@52e6fdee: startup date [Mon Nov 05 18:55:53 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-05 18:56:01] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [451] - Unregistering JMX-exposed beans on shutdown
+[ INFO ] [2018-11-05 18:56:01] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [183] - Unregistering JMX-exposed beans
+[ INFO ] [2018-11-05 18:56:01] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [208] - Shutting down ExecutorService 'taskExecutor'
+[ INFO ] [2018-11-05 18:56:51] com.github.ontio.OntsynhandlerApplication [50] - Starting OntsynhandlerApplication on sss.local with PID 12311 (/Users/sss/dev/localgit/javaProject/ontology-explorer/back-end-projects/SidechainSynHandler/target/classes started by sss in /Users/sss/dev/localgit/javaProject/ontology-explorer/back-end-projects/SidechainSynHandler)
+[ INFO ] [2018-11-05 18:56:51] com.github.ontio.OntsynhandlerApplication [663] - The following profiles are active: uat
+[ INFO ] [2018-11-05 18:56:51] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1a451d4d: startup date [Mon Nov 05 18:56:51 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-05 18:56:52] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$cf8443c6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-11-05 18:56:52] org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping [236] - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[ INFO ] [2018-11-05 18:56:53] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 20001 (http)
+[ INFO ] [2018-11-05 18:56:53] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-20001"]
+[ INFO ] [2018-11-05 18:56:53] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2018-11-05 18:56:53] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+[ INFO ] [2018-11-05 18:56:53] org.apache.catalina.core.AprLifecycleListener [180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/sss/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[ INFO ] [2018-11-05 18:56:53] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2018-11-05 18:56:53] org.springframework.web.context.ContextLoader [285] - Root WebApplicationContext: initialization completed in 1703 ms
+[ INFO ] [2018-11-05 18:56:53] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2018-11-05 18:56:53] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet messageDispatcherServlet mapped to [/services/*]
+[ INFO ] [2018-11-05 18:56:53] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2018-11-05 18:56:53] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2018-11-05 18:56:53] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2018-11-05 18:56:53] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ INFO ] [2018-11-05 18:56:53] com.github.ontio.thread.MainChainThread [51] - ========MainChainThread.run=======
+[ INFO ] [2018-11-05 18:56:53] com.github.ontio.OntsynhandlerApplication [29] - ########taskExecutor#########
+[ INFO ] [2018-11-05 18:56:53] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [171] - Initializing ExecutorService 
+[ INFO ] [2018-11-05 18:56:53] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [171] - Initializing ExecutorService  'taskExecutor'
+[ INFO ] [2018-11-05 18:56:53] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3567
+[ INFO ] [2018-11-05 18:56:53] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-05 18:56:53] com.zaxxer.hikari.HikariDataSource [110] - HikariPool-1 - Starting...
+[ INFO ] [2018-11-05 18:56:54] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [574] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1a451d4d: startup date [Mon Nov 05 18:56:51 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-05 18:56:54] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[ INFO ] [2018-11-05 18:56:54] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[ INFO ] [2018-11-05 18:56:54] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-05 18:56:54] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-05 18:56:54] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [433] - Registering beans for JMX exposure on startup
+[ INFO ] [2018-11-05 18:56:54] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+[ INFO ] [2018-11-05 18:56:54] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [668] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[ INFO ] [2018-11-05 18:56:54] org.apache.coyote.http11.Http11NioProtocol [180] - Starting ProtocolHandler ["http-nio-20001"]
+[ INFO ] [2018-11-05 18:56:54] org.apache.tomcat.util.net.NioSelectorPool [180] - Using a shared selector for servlet write/read
+[ INFO ] [2018-11-05 18:56:54] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [206] - Tomcat started on port(s): 20001 (http) with context path ''
+[ INFO ] [2018-11-05 18:56:54] com.github.ontio.OntsynhandlerApplication [59] - Started OntsynhandlerApplication in 3.61 seconds (JVM running for 4.046)
+[ ERROR] [2018-11-05 18:56:55] com.zaxxer.hikari.pool.HikariPool [567] - HikariPool-1 - Exception during pool initialization.
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3976)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3912)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1714)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1224)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2190)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:151)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:82)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:68)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:338)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:84)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:326)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy64.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:166)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:83)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy66.selectDBHeight(Unknown Source)
+	at com.github.ontio.thread.MainChainThread.run(MainChainThread.java:66)
+[ ERROR] [2018-11-05 18:56:55] com.github.ontio.thread.MainChainThread [105] - Exception occured，Synchronization thread can't work,error ...
+org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+### The error may exist in file [/Users/sss/dev/localgit/javaProject/ontology-explorer/back-end-projects/SidechainSynHandler/target/classes/mybatis/mapper/CurrentMapper.xml]
+### The error may involve com.github.ontio.dao.CurrentMapper.selectDBHeight
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:77)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:446)
+	at com.sun.proxy.$Proxy64.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:166)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:83)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy66.selectDBHeight(Unknown Source)
+	at com.github.ontio.thread.MainChainThread.run(MainChainThread.java:66)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+### The error may exist in file [/Users/sss/dev/localgit/javaProject/ontology-explorer/back-end-projects/SidechainSynHandler/target/classes/mybatis/mapper/CurrentMapper.xml]
+### The error may involve com.github.ontio.dao.CurrentMapper.selectDBHeight
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:150)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	... 6 common frames omitted
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:82)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:68)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:338)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:84)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:326)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	... 13 common frames omitted
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3976)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3912)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1714)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1224)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2190)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:151)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78)
+	... 23 common frames omitted
+[ INFO ] [2018-11-05 18:57:00] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [993] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1a451d4d: startup date [Mon Nov 05 18:56:51 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-05 18:57:00] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [451] - Unregistering JMX-exposed beans on shutdown
+[ INFO ] [2018-11-05 18:57:00] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [183] - Unregistering JMX-exposed beans
+[ INFO ] [2018-11-05 18:57:00] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [208] - Shutting down ExecutorService 'taskExecutor'
+[ INFO ] [2018-11-05 18:58:11] com.github.ontio.OntsynhandlerApplication [50] - Starting OntsynhandlerApplication on sss.local with PID 12342 (/Users/sss/dev/localgit/javaProject/ontology-explorer/back-end-projects/SidechainSynHandler/target/classes started by sss in /Users/sss/dev/localgit/javaProject/ontology-explorer/back-end-projects/SidechainSynHandler)
+[ INFO ] [2018-11-05 18:58:11] com.github.ontio.OntsynhandlerApplication [663] - The following profiles are active: uat
+[ INFO ] [2018-11-05 18:58:11] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6c80d78a: startup date [Mon Nov 05 18:58:11 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-05 18:58:12] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$9de6b635] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-11-05 18:58:12] org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping [236] - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[ INFO ] [2018-11-05 18:58:13] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 20001 (http)
+[ INFO ] [2018-11-05 18:58:13] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-20001"]
+[ INFO ] [2018-11-05 18:58:13] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2018-11-05 18:58:13] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+[ INFO ] [2018-11-05 18:58:13] org.apache.catalina.core.AprLifecycleListener [180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/sss/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[ INFO ] [2018-11-05 18:58:13] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2018-11-05 18:58:13] org.springframework.web.context.ContextLoader [285] - Root WebApplicationContext: initialization completed in 1837 ms
+[ INFO ] [2018-11-05 18:58:13] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2018-11-05 18:58:13] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet messageDispatcherServlet mapped to [/services/*]
+[ INFO ] [2018-11-05 18:58:13] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2018-11-05 18:58:13] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2018-11-05 18:58:13] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2018-11-05 18:58:13] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ INFO ] [2018-11-05 18:58:14] com.github.ontio.thread.MainChainThread [51] - ========MainChainThread.run=======
+[ INFO ] [2018-11-05 18:58:14] com.github.ontio.OntsynhandlerApplication [29] - ########taskExecutor#########
+[ INFO ] [2018-11-05 18:58:14] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [171] - Initializing ExecutorService 
+[ INFO ] [2018-11-05 18:58:14] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [171] - Initializing ExecutorService  'taskExecutor'
+[ INFO ] [2018-11-05 18:58:14] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3570
+[ INFO ] [2018-11-05 18:58:14] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-05 18:58:14] com.zaxxer.hikari.HikariDataSource [110] - HikariPool-1 - Starting...
+[ INFO ] [2018-11-05 18:58:14] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [574] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6c80d78a: startup date [Mon Nov 05 18:58:11 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-05 18:58:14] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[ INFO ] [2018-11-05 18:58:14] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[ INFO ] [2018-11-05 18:58:14] com.zaxxer.hikari.HikariDataSource [123] - HikariPool-1 - Start completed.
+[ INFO ] [2018-11-05 18:58:14] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-05 18:58:14] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-05 18:58:14] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ ERROR] [2018-11-05 18:58:14] com.github.ontio.thread.MainChainThread [105] - Exception occured，Synchronization thread can't work,error ...
+java.lang.NullPointerException: null
+	at com.github.ontio.thread.MainChainThread.handleMainChainEvent(MainChainThread.java:162)
+	at com.github.ontio.thread.MainChainThread.run(MainChainThread.java:100)
+[ INFO ] [2018-11-05 18:58:14] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [433] - Registering beans for JMX exposure on startup
+[ INFO ] [2018-11-05 18:58:14] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+[ INFO ] [2018-11-05 18:58:14] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [668] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[ INFO ] [2018-11-05 18:58:14] org.apache.coyote.http11.Http11NioProtocol [180] - Starting ProtocolHandler ["http-nio-20001"]
+[ INFO ] [2018-11-05 18:58:14] org.apache.tomcat.util.net.NioSelectorPool [180] - Using a shared selector for servlet write/read
+[ INFO ] [2018-11-05 18:58:14] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [206] - Tomcat started on port(s): 20001 (http) with context path ''
+[ INFO ] [2018-11-05 18:58:14] com.github.ontio.OntsynhandlerApplication [59] - Started OntsynhandlerApplication in 3.775 seconds (JVM running for 4.22)
+[ INFO ] [2018-11-05 18:58:18] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [993] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6c80d78a: startup date [Mon Nov 05 18:58:11 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-05 18:58:18] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [451] - Unregistering JMX-exposed beans on shutdown
+[ INFO ] [2018-11-05 18:58:18] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [183] - Unregistering JMX-exposed beans
+[ INFO ] [2018-11-05 18:58:18] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [208] - Shutting down ExecutorService 'taskExecutor'
+[ INFO ] [2018-11-05 18:58:18] com.zaxxer.hikari.HikariDataSource [381] - HikariPool-1 - Shutdown initiated...
+[ INFO ] [2018-11-05 18:58:18] com.zaxxer.hikari.HikariDataSource [383] - HikariPool-1 - Shutdown completed.
+[ INFO ] [2018-11-05 19:00:04] com.github.ontio.OntsynhandlerApplication [50] - Starting OntsynhandlerApplication on sss.local with PID 12364 (/Users/sss/dev/localgit/javaProject/ontology-explorer/back-end-projects/SidechainSynHandler/target/classes started by sss in /Users/sss/dev/localgit/javaProject/ontology-explorer/back-end-projects/SidechainSynHandler)
+[ INFO ] [2018-11-05 19:00:04] com.github.ontio.OntsynhandlerApplication [663] - The following profiles are active: uat
+[ INFO ] [2018-11-05 19:00:04] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@59fd97a8: startup date [Mon Nov 05 19:00:04 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-05 19:00:05] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$234c6633] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-11-05 19:00:05] org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping [236] - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[ INFO ] [2018-11-05 19:00:06] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 20001 (http)
+[ INFO ] [2018-11-05 19:00:06] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-20001"]
+[ INFO ] [2018-11-05 19:00:06] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2018-11-05 19:00:06] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+[ INFO ] [2018-11-05 19:00:06] org.apache.catalina.core.AprLifecycleListener [180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/sss/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[ INFO ] [2018-11-05 19:00:06] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2018-11-05 19:00:06] org.springframework.web.context.ContextLoader [285] - Root WebApplicationContext: initialization completed in 1695 ms
+[ INFO ] [2018-11-05 19:00:06] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2018-11-05 19:00:06] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet messageDispatcherServlet mapped to [/services/*]
+[ INFO ] [2018-11-05 19:00:06] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2018-11-05 19:00:06] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2018-11-05 19:00:06] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2018-11-05 19:00:06] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ INFO ] [2018-11-05 19:00:06] com.github.ontio.thread.MainChainThread [51] - ========MainChainThread.run=======
+[ INFO ] [2018-11-05 19:00:06] com.github.ontio.OntsynhandlerApplication [29] - ########taskExecutor#########
+[ INFO ] [2018-11-05 19:00:06] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [171] - Initializing ExecutorService 
+[ INFO ] [2018-11-05 19:00:06] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [171] - Initializing ExecutorService  'taskExecutor'
+[ INFO ] [2018-11-05 19:00:07] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:07] com.zaxxer.hikari.HikariDataSource [110] - HikariPool-1 - Starting...
+[ INFO ] [2018-11-05 19:00:07] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [574] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@59fd97a8: startup date [Mon Nov 05 19:00:04 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-05 19:00:07] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[ INFO ] [2018-11-05 19:00:07] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[ INFO ] [2018-11-05 19:00:07] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-05 19:00:07] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-05 19:00:07] com.zaxxer.hikari.HikariDataSource [123] - HikariPool-1 - Start completed.
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:07] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [433] - Registering beans for JMX exposure on startup
+[ INFO ] [2018-11-05 19:00:07] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+[ INFO ] [2018-11-05 19:00:07] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [668] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:07] org.apache.coyote.http11.Http11NioProtocol [180] - Starting ProtocolHandler ["http-nio-20001"]
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:07] org.apache.tomcat.util.net.NioSelectorPool [180] - Using a shared selector for servlet write/read
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:07] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [206] - Tomcat started on port(s): 20001 (http) with context path ''
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.OntsynhandlerApplication [59] - Started OntsynhandlerApplication in 3.62 seconds (JVM running for 4.165)
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:07] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:08] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3573
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3574
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3574
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3574
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3574
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3574
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3574
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3574
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3574
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3574
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3574
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3574
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3574
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3574
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3574
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3574
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3574
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3574
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3574
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3574
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3574
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3574
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3574
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3574
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3574
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:09] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [993] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@59fd97a8: startup date [Mon Nov 05 19:00:04 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-05 19:00:09] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [451] - Unregistering JMX-exposed beans on shutdown
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3574
+[ INFO ] [2018-11-05 19:00:09] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [183] - Unregistering JMX-exposed beans
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [67] - ######db blockheight:90
+[ INFO ] [2018-11-05 19:00:09] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [208] - Shutting down ExecutorService 'taskExecutor'
+[ INFO ] [2018-11-05 19:00:09] com.zaxxer.hikari.HikariDataSource [381] - HikariPool-1 - Shutdown initiated...
+[ INFO ] [2018-11-05 19:00:09] com.zaxxer.hikari.HikariDataSource [383] - HikariPool-1 - Shutdown completed.
+[ INFO ] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [64] - ######remote blockheight:3574
+[ ERROR] [2018-11-05 19:00:09] com.github.ontio.thread.MainChainThread [107] - Exception occured，Synchronization thread can't work,error ...
+org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: HikariDataSource HikariDataSource (HikariPool-1) has been closed.
+### The error may exist in file [/Users/sss/dev/localgit/javaProject/ontology-explorer/back-end-projects/SidechainSynHandler/target/classes/mybatis/mapper/CurrentMapper.xml]
+### The error may involve com.github.ontio.dao.CurrentMapper.selectDBHeight
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: HikariDataSource HikariDataSource (HikariPool-1) has been closed.
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:77)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:446)
+	at com.sun.proxy.$Proxy64.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:166)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:83)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy66.selectDBHeight(Unknown Source)
+	at com.github.ontio.thread.MainChainThread.run(MainChainThread.java:66)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: HikariDataSource HikariDataSource (HikariPool-1) has been closed.
+### The error may exist in file [/Users/sss/dev/localgit/javaProject/ontology-explorer/back-end-projects/SidechainSynHandler/target/classes/mybatis/mapper/CurrentMapper.xml]
+### The error may involve com.github.ontio.dao.CurrentMapper.selectDBHeight
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: HikariDataSource HikariDataSource (HikariPool-1) has been closed.
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:150)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:77)
+	at sun.reflect.GeneratedMethodAccessor31.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	... 6 common frames omitted
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: HikariDataSource HikariDataSource (HikariPool-1) has been closed.
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:82)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:68)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:338)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:84)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:326)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	... 12 common frames omitted
+Caused by: java.sql.SQLException: HikariDataSource HikariDataSource (HikariPool-1) has been closed.
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:96)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:151)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78)
+	... 22 common frames omitted

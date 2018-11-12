@@ -1,0 +1,114 @@
+[ INFO ] [2018-11-03 11:01:12] com.github.ontio.OntsynhandlerApplication [50] - Starting OntsynhandlerApplication on sss with PID 1159 (/Users/sss/dev/localgit/javaProject/ontology-explorer/back-end-projects/OntSynHandler/target/classes started by sss in /Users/sss/dev/localgit/javaProject/ontology-explorer/back-end-projects/OntSynHandler)
+[ INFO ] [2018-11-03 11:01:12] com.github.ontio.OntsynhandlerApplication [663] - The following profiles are active: uat
+[ INFO ] [2018-11-03 11:01:12] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@43195e57: startup date [Sat Nov 03 11:01:12 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-03 11:01:13] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$d686ebf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-11-03 11:01:13] org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping [236] - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[ INFO ] [2018-11-03 11:01:14] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 20001 (http)
+[ INFO ] [2018-11-03 11:01:14] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-20001"]
+[ INFO ] [2018-11-03 11:01:14] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2018-11-03 11:01:14] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+[ INFO ] [2018-11-03 11:01:14] org.apache.catalina.core.AprLifecycleListener [180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/sss/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[ INFO ] [2018-11-03 11:01:14] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2018-11-03 11:01:14] org.springframework.web.context.ContextLoader [285] - Root WebApplicationContext: initialization completed in 1599 ms
+[ INFO ] [2018-11-03 11:01:14] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2018-11-03 11:01:14] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet messageDispatcherServlet mapped to [/services/*]
+[ INFO ] [2018-11-03 11:01:14] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2018-11-03 11:01:14] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2018-11-03 11:01:14] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2018-11-03 11:01:14] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ WARN ] [2018-11-03 11:01:15] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [558] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'taskWare': Invocation of init method failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'MainChainThread': Unsatisfied dependency expressed through field 'msgHandleService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'msgHandleService': Unsatisfied dependency expressed through field 'sendTransactionThread'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.github.ontio.thread.SendTransactionThread' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+[ INFO ] [2018-11-03 11:01:15] org.apache.catalina.core.StandardService [180] - Stopping service [Tomcat]
+[ INFO ] [2018-11-03 11:01:15] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [101] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ ERROR] [2018-11-03 11:01:15] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [42] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field sendTransactionThread in com.github.ontio.asyncService.MsgHandleService required a bean of type 'com.github.ontio.thread.SendTransactionThread' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.github.ontio.thread.SendTransactionThread' in your configuration.
+
+[ INFO ] [2018-11-03 13:03:01] com.github.ontio.OntsynhandlerApplication [50] - Starting OntsynhandlerApplication on sss with PID 2547 (/Users/sss/dev/localgit/javaProject/ontology-explorer/back-end-projects/OntSynHandler/target/classes started by sss in /Users/sss/dev/localgit/javaProject/ontology-explorer/back-end-projects/OntSynHandler)
+[ INFO ] [2018-11-03 13:03:01] com.github.ontio.OntsynhandlerApplication [663] - The following profiles are active: uat
+[ INFO ] [2018-11-03 13:03:01] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5fdcaa40: startup date [Sat Nov 03 13:03:01 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-03 13:03:03] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$92e2eef8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-11-03 13:03:03] org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping [236] - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[ INFO ] [2018-11-03 13:03:03] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 20001 (http)
+[ INFO ] [2018-11-03 13:03:03] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-20001"]
+[ INFO ] [2018-11-03 13:03:03] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2018-11-03 13:03:03] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+[ INFO ] [2018-11-03 13:03:03] org.apache.catalina.core.AprLifecycleListener [180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/sss/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[ INFO ] [2018-11-03 13:03:03] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2018-11-03 13:03:03] org.springframework.web.context.ContextLoader [285] - Root WebApplicationContext: initialization completed in 1980 ms
+[ INFO ] [2018-11-03 13:03:04] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2018-11-03 13:03:04] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet messageDispatcherServlet mapped to [/services/*]
+[ INFO ] [2018-11-03 13:03:04] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2018-11-03 13:03:04] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2018-11-03 13:03:04] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2018-11-03 13:03:04] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ WARN ] [2018-11-03 13:03:04] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [558] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'taskWare': Invocation of init method failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'MainChainThread': Unsatisfied dependency expressed through field 'msgHandleService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'msgHandleService': Unsatisfied dependency expressed through field 'sendTransactionThread'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.github.ontio.thread.SendTransactionThread' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+[ INFO ] [2018-11-03 13:03:04] org.apache.catalina.core.StandardService [180] - Stopping service [Tomcat]
+[ INFO ] [2018-11-03 13:03:04] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [101] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ ERROR] [2018-11-03 13:03:04] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [42] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field sendTransactionThread in com.github.ontio.asyncService.MsgHandleService required a bean of type 'com.github.ontio.thread.SendTransactionThread' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.github.ontio.thread.SendTransactionThread' in your configuration.
+
+[ INFO ] [2018-11-03 13:05:15] com.github.ontio.OntsynhandlerApplication [50] - Starting OntsynhandlerApplication on sss with PID 2554 (/Users/sss/dev/localgit/javaProject/ontology-explorer/back-end-projects/OntSynHandler/target/classes started by sss in /Users/sss/dev/localgit/javaProject/ontology-explorer/back-end-projects/OntSynHandler)
+[ INFO ] [2018-11-03 13:05:15] com.github.ontio.OntsynhandlerApplication [663] - The following profiles are active: uat
+[ INFO ] [2018-11-03 13:05:16] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@123ef382: startup date [Sat Nov 03 13:05:16 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-03 13:05:17] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$d7c58828] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-11-03 13:05:17] org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping [236] - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[ INFO ] [2018-11-03 13:05:17] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 20001 (http)
+[ INFO ] [2018-11-03 13:05:17] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-20001"]
+[ INFO ] [2018-11-03 13:05:17] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2018-11-03 13:05:17] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+[ INFO ] [2018-11-03 13:05:17] org.apache.catalina.core.AprLifecycleListener [180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/sss/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[ INFO ] [2018-11-03 13:05:17] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2018-11-03 13:05:17] org.springframework.web.context.ContextLoader [285] - Root WebApplicationContext: initialization completed in 1748 ms
+[ INFO ] [2018-11-03 13:05:18] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2018-11-03 13:05:18] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet messageDispatcherServlet mapped to [/services/*]
+[ INFO ] [2018-11-03 13:05:18] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2018-11-03 13:05:18] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2018-11-03 13:05:18] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2018-11-03 13:05:18] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ WARN ] [2018-11-03 13:05:18] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [558] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'taskWare': Invocation of init method failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'MainChainThread': Unsatisfied dependency expressed through field 'msgHandleService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'msgHandleService': Unsatisfied dependency expressed through field 'sendTransactionThread'; nested exception is org.springframework.beans.factory.BeanNotOfRequiredTypeException: Bean named 'SendTransactionThread' is expected to be of type 'com.github.ontio.thread.SendTransactionThread' but was actually of type 'com.sun.proxy.$Proxy70'
+[ INFO ] [2018-11-03 13:05:18] org.apache.catalina.core.StandardService [180] - Stopping service [Tomcat]
+[ INFO ] [2018-11-03 13:05:18] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [101] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ ERROR] [2018-11-03 13:05:18] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [42] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'SendTransactionThread' could not be injected as a 'com.github.ontio.thread.SendTransactionThread' because it is a JDK dynamic proxy that implements:
+
+
+Action:
+
+Consider injecting the bean as one of its interfaces or forcing the use of CGLib-based proxies by setting proxyTargetClass=true on @EnableAsync and/or @EnableCaching.
+
