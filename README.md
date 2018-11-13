@@ -1,3 +1,34 @@
-## OntSynHandler
+# 跨链同步项目
 
-Synchronize block and transaction information to the local mysql.
+## 介绍
+
+该项目主要实现主链和子链数据同步功能。
+
+## 项目架构图
+
+
+## 工作原理
+
+该项目主要由主链监听线程，子链监听线程，以及事件处理线程池组成，另外提供mysql服务，监听的过程中和事件处理的结果数据会保存到mysql数据库中。
+
+
+### 主链监听线程
+
+主链监听线程用于监听主链推出来事件，目前的版本只监听主链的 "commitDpos" 和 "ongSwap" 事件。
+
+** commitDpos事件
+
+commitDpos事件表示主链进行了周期切换，此时需要将主链的系统配置信息更新到子链。
+
+** ongSwap事件
+
+ongSwap事件表示在主链抵押ong的动作，此时同步程序会调用子链的ongSwap函数，使得相应的地址增加ongx。
+
+### 子链监听线程
+
+子链监听线程主要用于监听子链推出来的事件，目前的版本只监听 "ongxSwap" 事件。
+
+** ongxSwap事件
+
+ongxSwap事件表示子链销毁ongx的请求，此时同步程序会调用主链的ongxSwap事件，从而使得某个设定的地址获得ong。
+
