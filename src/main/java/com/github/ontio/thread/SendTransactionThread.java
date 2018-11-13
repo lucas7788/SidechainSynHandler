@@ -6,6 +6,8 @@ import com.github.ontio.common.Address;
 import com.github.ontio.core.sidechaingovernance.SwapParam;
 import com.github.ontio.model.*;
 import com.github.ontio.network.exception.ConnectorException;
+import com.github.ontio.network.rest.X509;
+import com.github.ontio.paramBean.Result;
 import com.github.ontio.sdk.exception.SDKException;
 import com.github.ontio.sidechain.smartcontract.ongx.Swap;
 import com.github.ontio.utils.Common;
@@ -21,8 +23,21 @@ import org.springframework.scheduling.annotation.AsyncResult;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+import javax.net.ssl.HttpsURLConnection;
+import javax.net.ssl.SSLContext;
+import javax.net.ssl.SSLSocketFactory;
+import javax.net.ssl.TrustManager;
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.security.SecureRandom;
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.Future;
@@ -32,6 +47,7 @@ import java.util.concurrent.Future;
 @EnableTransactionManagement(proxyTargetClass = true)
 public class SendTransactionThread {
     private static final Logger logger = LoggerFactory.getLogger(SendTransactionThread.class);
+    private static final String DEFAULT_CHARSET = "UTF-8";
 
     @Async
     public Future<String> asyncHandleEvent(SqlSession session, List<NotifyEventInfo> infoList) throws Exception {
@@ -46,7 +62,7 @@ public class SendTransactionThread {
         return new AsyncResult<String>("success");
     }
 
-    private ConcurrentHashMap<String, Object> handleEvent(SqlSession session, List<NotifyEventInfo> infoList) {
+    private ConcurrentHashMap<String, Object> handleEvent(SqlSession session, List<NotifyEventInfo> infoList) throws ShadowException {
         ConcurrentHashMap map = new ConcurrentHashMap();
         List<Swap> swapList = new ArrayList();
         List<SwapParam> swapParamList = new ArrayList<>();
@@ -74,7 +90,11 @@ public class SendTransactionThread {
                     try {
                         String sideChainId2 = ConstantParam.ONT_SDKSERVICE.sidechainVm().governance().getSideChainId();
                         String sideChainData = ConstantParam.ONT_SDKSERVICE.getConnect().getSideChainData(sideChainId2);
-                        map.put("commitPos", sideChainData);
+//                        要从其他节点获得已经签过名的sidechaindata
+                        boolean b = verifySideChainData(sideChainData);
+                        if(b) {
+                            map.put("commitPos", sideChainData);
+                        }
                     } catch (ConnectorException e) {
                         e.printStackTrace();
                     } catch (IOException e) {
@@ -196,16 +216,76 @@ public class SendTransactionThread {
     private void updateSendDetail(SqlSession session, String txhash){
         session.insert("com.github.ontio.dao.SendTxDetailMapper.updateSendTxDetail", txhash);
     }
-    private void insertSideEvent(SqlSession session, NotifyEventInfo info){
-        NotifyInfoDao dao = new NotifyInfoDao();
-        dao.setBlkHeight(info.blkHeight);
-        dao.setContractAddress(info.ContractAddress);
-        if(info.getStates().get(0).equals("ongxSwap")) {
-            dao.setFuncName("ongSwap");
-            dao.setAddress((String) info.getStates().get(1));
-            dao.setAmount(Long.toString((long)info.getStates().get(2)));
+
+    private boolean verifySideChainData(String sideChainData) throws ShadowException {
+        if(ConstantParam.MAINCHAIN_RPCLIST.size() < 7) {
+            throw new ShadowException(ShadowErrorCode.OtherError("main chain rpc list less tha"));
         }
-        dao.setTxHash(info.txhash);
-        session.insert("com.github.ontio.dao.NotifySideMapper.insertSideNotify", dao);
+        HashSet<String> sideChainDataSet = new HashSet<String>();
+        sideChainDataSet.add(sideChainData);
+        for(String nodeUrl : ConstantParam.MAINCHAIN_RPCLIST) {
+            String result = getSideChainData(nodeUrl);
+            JSONObject obj = JSON.parseObject(result);
+            JSONObject res = JSON.parseObject(obj.getString("Result"));
+            String sideChainDataTemp = res.getString("sideChainData");
+            String signature = res.getString("signature");
+            try {
+                boolean b = ConstantParam.ONT_SDKSERVICE.verifySignature(ConstantParam.ADMIN_ACCOUNT.serializePublicKey(),
+                        sideChainDataTemp.getBytes(), signature.getBytes());
+                if(b) {
+                    sideChainDataSet.add(sideChainData);
+                }
+            } catch (SDKException e) {
+                e.printStackTrace();
+            }
+        }
+        if(sideChainDataSet.isEmpty()) {
+            throw new ShadowException(ShadowErrorCode.OtherError("verifySignature failed"));
+        }else if (sideChainDataSet.size() > 1){
+            throw new ShadowException(ShadowErrorCode.OtherError("sidechaindata is different"));
+        }
+        return true;
+    }
+
+    private String getSideChainData(String nodeUrl)  {
+        String URL_getSideChainData = "/api/v1/commitdpos/getsidechaindata";
+        try {
+            return get(URL_getSideChainData, false);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    private static String get(String url  ,boolean https) throws Exception {
+        URL u = new URL(url);
+        HttpURLConnection http = (HttpURLConnection) u.openConnection();
+        http.setConnectTimeout(50000);
+        http.setReadTimeout(50000);
+        http.setRequestMethod("GET");
+        http.setRequestProperty("Content-Type","application/json");
+        if(https) {
+            SSLContext sslContext = SSLContext.getInstance("SSL", "SunJSSE");
+            sslContext.init(null, new TrustManager[]{new X509()}, new SecureRandom());
+            SSLSocketFactory ssf = sslContext.getSocketFactory();
+            ((HttpsURLConnection)http).setSSLSocketFactory(ssf);
+        }
+        http.setDoOutput(true);
+        http.setDoInput(true);
+        http.connect();
+        StringBuilder sb = new StringBuilder();
+        try (InputStream is = http.getInputStream()) {
+            try (BufferedReader reader = new BufferedReader(new InputStreamReader(is, DEFAULT_CHARSET))) {
+                String str = null;
+                while((str = reader.readLine()) != null) {
+                    sb.append(str);
+                    str = null;
+                }
+            }
+        }
+        if (http != null) {
+            http.disconnect();
+        }
+        return sb.toString();
     }
 }
