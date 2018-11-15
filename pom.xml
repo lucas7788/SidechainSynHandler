@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.github.ontio</groupId>
-	<artifactId>ontsynhandler</artifactId>
+	<artifactId>sidechainsynhandler</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>ontsynhandler</name>
-	<description>ontsynhandler project for Ontology</description>
+	<name>sidechainsynhandler</name>
+	<description>sidechainsynhandler project for Ontology</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
