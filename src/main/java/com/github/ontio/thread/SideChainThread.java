@@ -58,7 +58,6 @@ public class SideChainThread extends Thread {
 
             int oneBlockTryTime = 1;
 
-            long startTime = System.currentTimeMillis();
             while (true) {
 
                 int remoteBlockHieght = getRemoteBlockHeight();
@@ -91,10 +90,11 @@ public class SideChainThread extends Thread {
                 //本次同步再次插入会报主键重复异常
 //              根据高度获得事件
                 MonitorParam param = new MonitorParam(configParam.ASSET_ONG_CODEHASH,"ongxSwap");
-                Common.monitor(logger,notifyMapper,Common.SIDE_CHAIN,remoteBlockHieght,new MonitorParam[]{param});
+                Common.monitor(logger,notifyMapper,Common.SIDE_CHAIN,dbBlockHeight,new MonitorParam[]{param});
                 long currTime = System.currentTimeMillis();
                 if(Common.QueueSideChain != null && Common.QueueSideChain.size() >0 &&(
-                        Common.QueueSideChain.size() >= ConstantParam.COLLECT_TX_NUM || currTime-startTime >= ConstantParam.SEND_TX_WAIT_TIME)){
+                        Common.QueueSideChain.size() >= ConstantParam.COLLECT_TX_NUM || currTime-Common.START_TIME_SIDE >= ConstantParam.SEND_TX_WAIT_TIME)){
+                    Common.START_TIME_SIDE = 0;
                     List<NotifyEventInfo> infoList = new ArrayList<>();
                     int size = Common.QueueSideChain.size();
                     for(int i=0;i < size; i++) {

@@ -21,28 +21,14 @@ import java.util.concurrent.BlockingQueue;
 
 public class Common {
 
-    public static String CHAIN_NOTIFY = "-chainNotify.csv";
-    public static String HANDLE_SENDTRANSACTION = "-handleSendTransaction.csv";
+    public static long START_TIME_MAIN = 0;
+    public static long START_TIME_SIDE = 0;
     public static String MAIN_CHAIN = "mainChain";
     public static String SIDE_CHAIN = "sideChain";
     public static BlockingQueue<NotifyEventInfo> QueueMainChain = new ArrayBlockingQueue<NotifyEventInfo>(100);
     public static BlockingQueue<NotifyEventInfo> QueueSideChain = new ArrayBlockingQueue<NotifyEventInfo>(100);
     public static BlockingQueue<NotifyEventInfo> QueueCommitPos = new ArrayBlockingQueue<NotifyEventInfo>(1);
 
-    public static boolean verifyHeight(ConnectMgr rpcClient, int height) throws IOException, InterruptedException, ConnectorException {
-        int currentHeight = rpcClient.getBlockHeight();
-        if (currentHeight < height){
-            waiteMoment(currentHeight);
-            return false;
-        }
-        return true;
-    }
-
-    public static void waiteMoment(int currentHeight) throws InterruptedException {
-        System.out.println("current block height is " + currentHeight);
-        System.out.println("please wait...");
-        Thread.sleep(6000);
-    }
 
     public static void monitor(Logger logger, NotifyMapper notifyMapper, String chainType, int height, MonitorParam[] params) throws ConnectorException, IOException, InterruptedException {
         Object event = null;
@@ -64,9 +50,11 @@ public class Common {
                             info.setTxhash(smartCodeEvent.TxHash);
                             info.setChainType(chainType);
                             info.setBlkHeight(height);
-                            System.out.println("Notify:" + JSON.toJSONString(info));
-                            logger.info("************");
+                            logger.info("**************Notify:" + JSON.toJSONString(info));
                             if(chainType.equals(Common.MAIN_CHAIN)){
+                                if(Common.START_TIME_MAIN == 0){
+                                    Common.START_TIME_MAIN= System.currentTimeMillis();
+                                }
                                 insertMainEvent(notifyMapper, info);
                                 if(info.ContractAddress.equals("0700000000000000000000000000000000000000") && info.getStates().get(0).equals("commitDpos")){
                                     Common.QueueCommitPos.put(info);
@@ -74,6 +62,9 @@ public class Common {
                                     Common.QueueMainChain.put(info);
                                 }
                             }else {
+                                if(Common.START_TIME_SIDE == 0) {
+                                    Common.START_TIME_SIDE = System.currentTimeMillis();
+                                }
                                 insertSideEvent(notifyMapper, info);
                                 Common.QueueSideChain.put(info);
                             }
@@ -84,6 +75,17 @@ public class Common {
         }
     }
 
+    public static long convertAmount(Object amountEvent){
+        long amount = 0;
+        if(amountEvent.getClass().getName().equals("java.lang.Integer")){
+            int amountTemp = (int) amountEvent;
+            amount = (long) amountTemp;
+        }else {
+            amount = (long) amountEvent;
+        }
+        return amount;
+    }
+
     public static void insertMainEvent(NotifyMapper notifyMapper,NotifyEventInfo info){
         NotifyInfoDao dao = new NotifyInfoDao();
         dao.setBlkHeight(info.blkHeight);
@@ -92,7 +94,7 @@ public class Common {
             dao.setFuncName("ongSwap");
             dao.setSideChainId((String) info.getStates().get(1));
             dao.setAddress((String) info.getStates().get(2));
-            dao.setAmount(Long.toString((long) info.getStates().get(3)));
+            dao.setAmount(Long.toString(convertAmount(info.getStates().get(3))));
         }else if(info.getStates().get(0).equals("commitDpos")) {
             dao.setFuncName("commitDpos");
         }
@@ -107,7 +109,7 @@ public class Common {
         if(info.getStates().get(0).equals("ongxSwap")) {
             dao.setFuncName("ongSwap");
             dao.setAddress((String) info.getStates().get(1));
-            dao.setAmount(Long.toString((long)info.getStates().get(2)));
+            dao.setAmount(Long.toString(convertAmount(info.getStates().get(2))));
         }
         dao.setTxHash(info.txhash);
         notifyMapper.insertSideNotify(dao);

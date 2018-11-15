@@ -54,8 +54,6 @@ public class MainChainThread extends Thread {
             //初始化node列表
             initNodeRpcList();
 
-            long startTime = System.currentTimeMillis();
-
             int oneBlockTryTime = 1;
             while (true) {
 
@@ -65,7 +63,6 @@ public class MainChainThread extends Thread {
                 int dbBlockHeight = blkHeightMainMapper.selectDBHeight();
                 logger.info("######db blockheight:{}", dbBlockHeight);
                 dbBlockHeight = dbBlockHeight +1;
-                logger.info("#####################startTime:{}", startTime);
                 //wait for generating block
                 if (dbBlockHeight >= remoteBlockHieght) {
                     logger.info("+++++++++wait for block+++++++++");
@@ -95,8 +92,8 @@ public class MainChainThread extends Thread {
                     infoList.add(Common.QueueCommitPos.take());
                     msgHandleService.handleEventList(infoList);
                 } else if(Common.QueueMainChain != null && Common.QueueMainChain.size() >0 &&(
-                        Common.QueueMainChain.size() >= ConstantParam.COLLECT_TX_NUM || currTime-startTime >= ConstantParam.SEND_TX_WAIT_TIME)){
-                    startTime = currTime;
+                        Common.QueueMainChain.size() >= ConstantParam.COLLECT_TX_NUM || currTime-Common.START_TIME_MAIN >= ConstantParam.SEND_TX_WAIT_TIME)){
+                    Common.START_TIME_MAIN = currTime;
                     List<NotifyEventInfo> infoList = new ArrayList<>();
                     int size = Common.QueueMainChain.size();
                     for(int i=0;i < size; i++) {

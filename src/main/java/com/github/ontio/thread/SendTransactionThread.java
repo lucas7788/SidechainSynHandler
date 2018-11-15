@@ -90,11 +90,12 @@ public class SendTransactionThread {
                     try {
                         String sideChainId2 = ConstantParam.ONT_SDKSERVICE.sidechainVm().governance().getSideChainId();
                         String sideChainData = ConstantParam.ONT_SDKSERVICE.getConnect().getSideChainData(sideChainId2);
+                        map.put("commitPos", sideChainData);
 //                        要从其他节点获得已经签过名的sidechaindata
-                        boolean b = verifySideChainData(sideChainData);
-                        if(b) {
-                            map.put("commitPos", sideChainData);
-                        }
+//                        boolean b = verifySideChainData(sideChainData);
+//                        if(b) {
+//                            map.put("commitPos", sideChainData);
+//                        }
                     } catch (ConnectorException e) {
                         e.printStackTrace();
                     } catch (IOException e) {
